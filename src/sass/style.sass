@@ -1,4 +1,5 @@
 @use 'bg_bundle'
+@use 'right'
 
 $default-size:10px
 %placeholder-main
@@ -11,9 +12,12 @@ body
 
 main
   width: 300px +$default-size
+  text-align: center
+  +right.travel
 li
+  @extend %placeholder-main
   a
-    @extend %placeholder-main
+
     display: block
     height: 30px
 
@@ -27,3 +31,5 @@ li
 .sidebar
   float: left
   margin-left: pow-pow(4, 3) * 1px
+
++bg_bundle.li-list

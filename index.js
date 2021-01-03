@@ -1,4 +1,4 @@
-import "./sass/style.sass";
+import "./src/sass/style.sass";
 import { greeting } from "./hello_world";
 
 greeting();

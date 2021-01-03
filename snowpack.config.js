@@ -1,3 +1,5 @@
 module.exports = {
-  plugins: [["@snowpack/plugin-sass"]],
+  plugins: [
+    ["@snowpack/plugin-sass", { compilerOptions: { style: "expanded" } }],
+  ],
 };

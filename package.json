@@ -12,8 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@snowpack/plugin-sass": "^1.2.0",
     "canvas-confetti": "^1.3.2",
     "snowpack": "^2.18.5"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-sass": "^1.2.0"
   }
 }
