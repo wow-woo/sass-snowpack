@@ -1,0 +1,29 @@
+@use 'bg_bundle'
+
+$default-size:10px
+%placeholder-main
+  border: 1.3px solid green
+  color: skyblue
+  background-color: #fff
+
+body
+  +bg_bundle.positioning(skyblue)
+
+main
+  width: 300px +$default-size
+li
+  a
+    @extend %placeholder-main
+    display: block
+    height: 30px
+
+@function pow-pow($base, $exponent)
+  $result: 1
+  @for $_ from 1 through $exponent
+    $result: $result * $base
+
+  @return $result
+
+.sidebar
+  float: left
+  margin-left: pow-pow(4, 3) * 1px

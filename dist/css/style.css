@@ -1,0 +1,37 @@
+li a {
+  border: 1.3px solid green;
+  color: skyblue;
+  background-color: #fff;
+}
+
+body {
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: skyblue;
+}
+
+main {
+  width: 310px;
+}
+
+li a {
+  display: block;
+  height: 30px;
+}
+
+.sidebar {
+  float: left;
+  margin-left: 64px;
+}
